@@ -1,0 +1,1035 @@
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+  <head>
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=600,user-scalable=1.0" />
+    <link rel="preconnect" href="https://www.google-analytics.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://stats.g.doubleclick.net" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="CV - Hien" />
+    <meta
+      name="twitter:description"
+      content="I'm Tran Thanh Hien. This is the CV page! You can download my CV here!"
+    />
+    <title>UI - Thanh Hien</title>
+    <meta name="keywords" content="Developer, HienCV" />
+    <meta
+      name="description"
+      content="I'm Tran Thanh Hien. This is the CV page! You can download my CV here!"
+    />
+    <meta name="author" content="Hien" />
+    <meta property="og:title" content="CV - Hien" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="CV - Hien" />
+    <meta property="og:image" content="common/img/cv-wide.png" />
+
+    <meta property="og:site_name" content="Hien" />
+    <meta
+      property="og:description"
+      content="I'm Tran Thanh Hien. This is the CV page! You can download my CV here!"
+    />
+    <meta property="fb:admins" content="100003912251390" />
+    <link
+      rel="shortcut icon"
+      href="https://img.icons8.com/material-outlined/24/source-code.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="144x144"
+      href="https://img.icons8.com/material-outlined/24/source-code.png"
+    />
+    <!--    <link rel="stylesheet" href="/common/css/CVv0.2.css">-->
+    <link rel="stylesheet" href="common/css/CV.v0.3.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link
+      rel="mask-icon"
+      href="https://www.resumemaker.online/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+      integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body
+    class="locked vsc-initialized"
+    style="overflow: visible"
+    data-new-gr-c-s-check-loaded="14.979.0"
+    data-gr-ext-installed=""
+    data-new-gr-c-s-loaded="14.979.0"
+  >
+    <div class="loading" style="background: #7fe3ab">
+      <div class="loading_gradient"></div>
+    </div>
+    <div class="video-bg">
+      <div class="vsc-controller"></div>
+      <video width="320" height="240" autoplay="" loop="" muted="">
+        <source
+          src="./pexels-redeye-11592120-3840x2160-25fps.mp4"
+          type="video/mp4"
+        />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <label class="fab">
+      <div class="fab-menu">
+        <div id="toprint" class="btn fab-btn placeholder" onclick="printDiv()">
+          &nbsp;<i class="bi bi-printer-fill"></i>&nbsp;
+        </div>
+      </div>
+      <div class="fab-blank"></div>
+    </label>
+    <script>
+      function printDiv() {
+        let printContents = document.getElementById("wrapper").innerHTML;
+        let originalContents = document.body.innerHTML;
+        document.body.innerHTML = printContents;
+        document.body.classList.add("print-setting");
+        setTimeout(function () {
+          window.print();
+        }, 1000);
+        setTimeout(function () {
+          document.body.innerHTML = originalContents;
+          document.body.classList.remove("print-setting");
+        }, 5000);
+      }
+    </script>
+    <div id="edit" style="display: block; opacity: 1">
+      <div id="wrapper">
+        <!-- pequeno and grande -->
+        <div id="imprimir" class="template1 pequeno">
+          <div
+            id="contimprimir"
+            style="
+              font-family: Poppins;
+              opacity: 1;
+              transform: scale(1);
+              margin-top: -25px;
+            "
+          >
+            <ul style="display: flex">
+              <li class="li27" id="foto" style="display: block">
+                <label for="inputfoto2" style="cursor: pointer">
+                  <div
+                    class="cont_fotodiv"
+                    style="
+                      background: url('./common/img/21520230_ThanhHien.jpg');
+                      transform: rotate(0deg);
+                    "
+                  >
+                    <div id="inserta_imagenlabel" style="opacity: 0">
+                      <img
+                        alt="image"
+                        src="./common/img/21520230_ThanhHien.jpg"
+                      />
+                    </div>
+                  </div>
+                </label>
+                <input
+                  type="file"
+                  id="inputfoto2"
+                  style="display: none"
+                  accept="image/*"
+                />
+              </li>
+              <li class="li100" id="nombre_cont">
+                <div>
+                  <span></span>
+                  <div class="centradovertical" id="centrado_nombre">
+                    <p
+                      class="nombre color text-center"
+                      contenteditable="false"
+                      placeholder="Your name"
+                      id="nombre"
+                      style="
+                        color: #04d15d;
+                        font-size: 50px;
+                        padding-bottom: 15px;
+                      "
+                    >
+                      Tran Thanh Hien
+                    </p>
+                    <p
+                      class="titulo1 text-center"
+                      contenteditable="false"
+                      placeholder="Your profession or speciality"
+                      id="titulo"
+                      style="display: block"
+                    >
+                      UI Developer Intern
+                    </p>
+                    <div class="contact-top">
+                      <table id="table" style="width: 90%; table-layout: fixed">
+                        <tbody>
+                          <tr>
+                            <td style="text-align: right">
+                              <a href="tel:+84969669531">
+                                <p
+                                  class="texto"
+                                  contenteditable="false"
+                                  placeholder="Enter your phone number"
+                                  style="display: contents"
+                                >
+                                  039 828 5020
+                                </p>
+                                <i class="bi bi-telephone-fill"></i>
+                              </a>
+                            </td>
+                            <td width="15px">
+                              <i
+                                class="bi bi-grip-vertical"
+                                style="display: inline-table"
+                              ></i>
+                            </td>
+                            <td>
+                              <a href="mailto:tranthanhhien123bt@gmail.com">
+                                <i class="bi bi-envelope-fill"> </i>
+
+                                <p
+                                  class="texto"
+                                  contenteditable="false"
+                                  placeholder="Enter your email"
+                                  style="display: contents"
+                                >
+                                  tranthanhhien123bt@gmail.com
+                                </p>
+                              </a>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <ul>
+              <li class="li27" id="datospersonales">
+                <div id="perfil" style="display: none">
+                  <p
+                    class="titulo1"
+                    contenteditable="false"
+                    placeholder="Profile"
+                    style="display: block"
+                  >
+                    Profile
+                  </p>
+                  <p
+                    class="texto"
+                    contenteditable="false"
+                    placeholder="Write here a paragraph about yourself or you can change the title to read 'Objective'."
+                    style="text-align: justify"
+                  >
+                    Hello, my name is Tran Thanh Hien.
+                  </p>
+                </div>
+                <p
+                  class="titulo1 contact_title"
+                  contenteditable="false"
+                  placeholder="Portfolios"
+                >
+                  Portfolios
+                </p>
+                <div
+                  class="contacto_item sortable"
+                  draggable="true"
+                  id="mail"
+                  style="display: none"
+                >
+                  <div>
+                    <img
+                      draggable="false"
+                      alt=""
+                      class="color_estrellas"
+                      src="/common/img/email.png"
+                      style="background: #04d15d"
+                    />
+                  </div>
+                  <p
+                    class="texto"
+                    contenteditable="false"
+                    placeholder="Enter your email"
+                  >
+                    tranthanhhien123bt@gmail.com
+                  </p>
+                </div>
+                <div
+                  class="contacto_item sortable"
+                  draggable="true"
+                  id="tel"
+                  style="display: none"
+                >
+                  <div>
+                    <img
+                      draggable="false"
+                      alt=""
+                      class="color_estrellas"
+                      src="/common/img/tel.png"
+                      style="background: #04d15d"
+                    />
+                  </div>
+                  <a href="tel:+84799592581">
+                    <p
+                      class="texto"
+                      contenteditable="false"
+                      placeholder="Enter your phone number"
+                    >
+                      039 828 5020
+                    </p>
+                  </a>
+                </div>
+                <div
+                  class="contacto_item sortable"
+                  draggable="true"
+                  id="linkedin"
+                  style="display: block"
+                >
+                  <a
+                    href="https://www.linkedin.com/in/hien-tran-96aa792b1/"
+                    target="_blank"
+                  >
+                    <p
+                      class="texto"
+                      contenteditable="false"
+                      placeholder="yourProfile"
+                    >
+                      <i class="bi bi-linkedin red-color icon-left"></i> Hien
+                      Tran
+                    </p>
+                  </a>
+                </div>
+                <div
+                  class="contacto_item sortable"
+                  draggable="true"
+                  id="github"
+                  style="display: block"
+                >
+                  <a href="https://github.com/chip267" target="_blank">
+                    <p
+                      class="texto"
+                      contenteditable="false"
+                      placeholder="yourProfile"
+                    >
+                      <i class="bi bi-github red-color icon-left"></i>Thanh Hien
+                    </p>
+                  </a>
+                </div>
+                <div
+                  class="contacto_item sortable"
+                  draggable="true"
+                  id="website"
+                  style="display: block"
+                >
+                  <a href="https://www.behance.net/chipp267" target="_blank">
+                    <p
+                      class="texto"
+                      contenteditable="false"
+                      placeholder="yourWebsite.com"
+                    >
+                      <i class="bi bi-globe red-color icon-left"></i>Thanh Hien
+                      Tran
+                    </p>
+                  </a>
+                </div>
+
+                <div
+                  class="contacto_item sortable"
+                  draggable="true"
+                  id="website"
+                  style="display: block"
+                >
+                  <a href="https://www.facebook.com/chipp267/" target="_blank">
+                    <p
+                      class="texto"
+                      contenteditable="false"
+                      placeholder="yourProfile"
+                    >
+                      <i class="bi bi-facebook red-color icon-left"></i>Tran
+                      Thanh Hien
+                    </p>
+                  </a>
+                </div>
+                <!-- <div class="contacto_item sortable" draggable="true" id="behance" style="display: block;">
+                            <a href="https://www.behance.net/chipp267" target="_blank">
+                                <p class="texto" contenteditable="false" placeholder="yourProfile" >
+                                    <i class="bi bi-behance red-color icon-left"></i>Tran Thanh Hien
+                                </p>
+                            </a>
+                        </div> -->
+
+                <p
+                  class="titulo1 titulo2"
+                  contenteditable="false"
+                  placeholder="Custom text"
+                >
+                  Design
+                </p>
+                <div class="prog-box">
+                  <div class="prog-item sortable" draggable="true">Figma</div>
+                  <div class="prog-item sortable" draggable="true">Canva</div>
+                  <div class="prog-item sortable" draggable="true">Nomad</div>
+                  <div class="prog-item sortable" draggable="true">Miro</div>
+                  <div class="prog-item sortable" draggable="true">Sketch</div>
+
+                  <div class="prog-item sortable" draggable="true">
+                    Adobe Illustrator
+                  </div>
+                  <div class="prog-item sortable" draggable="true">
+                    Adobe Photoshop
+                  </div>
+                </div>
+                <p
+                  class="titulo1 titulo2"
+                  contenteditable="false"
+                  placeholder="Custom text"
+                >
+                  Database & Cloud Services
+                </p>
+                <div class="prog-box">
+                  <div class="prog-item sortable" draggable="true">
+                    Firebase
+                  </div>
+                  <div class="prog-item sortable" draggable="true">MongoDB</div>
+                </div>
+                <p
+                  class="titulo1 titulo2"
+                  contenteditable="false"
+                  placeholder="Custom text"
+                >
+                  Tools
+                </p>
+                <div class="prog-box">
+                  <div class="prog-item sortable" draggable="true">Git</div>
+                  <div class="prog-item sortable" draggable="true">
+                    Star UML
+                  </div>
+                  <div class="prog-item sortable" draggable="true">Draw.io</div>
+                  <div class="prog-item sortable" draggable="true">
+                    Wordpress
+                  </div>
+                </div>
+                <p
+                  class="titulo1 titulo2"
+                  contenteditable="false"
+                  placeholder="Custom text"
+                >
+                  Development
+                </p>
+                <div class="prog-box">
+                  <div class="prog-item sortable" draggable="true">
+                    HTML/CSS
+                  </div>
+                  <div class="prog-item sortable" draggable="true">
+                    JavaScript
+                  </div>
+                  <div class="prog-item sortable" draggable="true">Flutter</div>
+                </div>
+                <p
+                  class="titulo1"
+                  contenteditable="false"
+                  placeholder="Custom text"
+                  style="justify-content: space-between"
+                >
+                  <a
+                    href="https://www.linkedin.com/in/hien-tran-96aa792b1/details/certifications/"
+                    target="_blank"
+                    title="Click to open list of certifications"
+                  >
+                    CERTIFICATIONS &nbsp;
+                    <i
+                      class="bi bi-arrow-right-circle-fill red-color"
+                      style="vertical-align: top"
+                    ></i>
+                  </a>
+                </p>
+                <div id="otros" class="sortable">
+                  <!-- <a
+                    href="
+                            https://www.coursera.org/account/accomplishments/certificate/GUX4SFXHFZ29"
+                    target="_blank"
+                  > -->
+                  <!-- <div class="cuadro myset ui-state-default">
+                      <div class="certi-img">
+                        <img
+                          draggable="false"
+                          alt=""
+                          class="color_estrellas"
+                          src="common/img/Google-icon.jpg"
+                          style="background: #01c254"
+                        />
+                      </div>
+                      <p
+                        class="titulo3 certi-text"
+                        contenteditable="false"
+                        placeholder="Item"
+                      >
+                        Foundations of User Experience (UX) Design
+                      </p>
+                    </div> -->
+                  <!-- </a> -->
+
+                  <!-- <a
+                    href="
+                            https://www.coursera.org/account/accomplishments/certificate/3LVDTDW7CQBT"
+                    target="_blank"
+                  >
+                    <div class="cuadro myset ui-state-default">
+                      <div class="certi-img">
+                        <img
+                          draggable="false"
+                          alt=""
+                          class="color_estrellas"
+                          src="common/img/Google-icon.jpg"
+                          style="background: #01c254"
+                        />
+                      </div>
+                      <p
+                        class="titulo3 certi-text"
+                        contenteditable="false"
+                        placeholder="Item"
+                      >
+                        Start the UX Design Process: Empathize, Define, and
+                        Ideate
+                      </p>
+                    </div>
+                  </a> -->
+
+                  <!-- <a
+                    href="https://www.coursera.org/account/accomplishments/certificate/UCEABXHR477Z"
+                    target="_blank"
+                  >
+                    <div class="cuadro myset ui-state-default">
+                      <div class="certi-img">
+                        <img
+                          draggable="false"
+                          alt=""
+                          class="color_estrellas"
+                          src="common/img/Google-icon.jpg"
+                          style="background: #01c254"
+                        />
+                      </div>
+                      <p
+                        class="titulo3 certi-text"
+                        contenteditable="false"
+                        placeholder="Item"
+                      >
+                        Build Wireframes and Low-Fidelity Prototypes
+                      </p>
+                    </div>
+                  </a> -->
+                  <!-- <a
+                    href="https://www.coursera.org/account/accomplishments/certificate/FGPJGAFWUBGJ"
+                    target="_blank"
+                  >
+                    <div class="cuadro myset ui-state-default">
+                      <div class="certi-img">
+                        <img
+                          draggable="false"
+                          alt=""
+                          class="color_estrellas"
+                          src="common/img/Google-icon.jpg"
+                          style="background: #01c254"
+                        />
+                      </div>
+                      <p
+                        class="titulo3 certi-text"
+                        contenteditable="false"
+                        placeholder="Item"
+                      >
+                        Conduct UX Research and Test Early Concepts
+                      </p>
+                    </div>
+                  </a> -->
+                  <!-- <a
+                    href="https://www.coursera.org/account/accomplishments/certificate/FGPJGAFWUBGJ"
+                    target="_blank"
+                  >
+                    <div class="cuadro myset ui-state-default">
+                      <div class="certi-img">
+                        <img
+                          draggable="false"
+                          alt=""
+                          class="color_estrellas"
+                          src="common/img/Google-icon.jpg"
+                          style="background: #01c254"
+                        />
+                      </div>
+                      <p
+                        class="titulo3 certi-text"
+                        contenteditable="false"
+                        placeholder="Item"
+                      >
+                        Create High-Fidelity Designs and Prototypes in Figma
+                      </p>
+                    </div>
+                  </a> -->
+                  <a>
+                    <div class="cuadro myset ui-state-default">
+                      <div class="certi-img">
+                        <img
+                          draggable="false"
+                          alt=""
+                          class="color_estrellas"
+                          src="common/img/iig-avatar.webp"
+                          style="background: #01c254"
+                        />
+                      </div>
+                      <p
+                        class="titulo3 certi-text"
+                        contenteditable="false"
+                        placeholder="Item"
+                      >
+                        670 - TOEIC Reading & Listening
+                      </p>
+                    </div>
+                  </a>
+                </div>
+
+                <p class="texto" style="font-size: 14px; margin-top: 20px">
+                  <i>*Fields click to follow the pages</i>
+                </p>
+              </li>
+              <li class="li73">
+                <div id="bloqueprincipal">
+                  <p
+                    class="titulo1 education_title"
+                    contenteditable="false"
+                    placeholder="Education"
+                  >
+                    EDUCATION
+                  </p>
+                  <div
+                    class="sortable formacionacademica"
+                    id="formacionacademica"
+                  >
+                    <div class="cuadro ui-state-default">
+                      <div style="position: relative">
+                        <div
+                          class="timeline_bola color_estrellas"
+                          style="background: #04d15d"
+                        ></div>
+                        <p
+                          class="titulo2 color"
+                          contenteditable="false"
+                          placeholder="Degree"
+                          style="color: #04d15d"
+                        >
+                          Software Engineering
+                        </p>
+                      </div>
+                      <p
+                        class="titulo3"
+                        contenteditable="false"
+                        placeholder="School"
+                      >
+                        University of Information Technology - UIT
+                      </p>
+                      <br />
+                      <p
+                        class="titulo3"
+                        contenteditable="false"
+                        placeholder="School"
+                      >
+                        VietNam National University HCMC
+                      </p>
+                      <p
+                        class="fecha"
+                        contenteditable="false"
+                        placeholder="From - Until"
+                      >
+                        Oct 2021 - Now
+                      </p>
+
+                      <div class="timeline_linea"></div>
+                    </div>
+                  </div>
+
+                  <!-- <p
+                    class="titulo1"
+                    id="titulo_laboral"
+                    contenteditable="false"
+                    placeholder="Professional experience"
+                    style="display: block"
+                  >
+                    <a
+                      href="https://github.com/chip267"
+                      title="Click to show more details and project on Github"
+                      target="_blank"
+                    >
+                      Work Experiences &nbsp;
+                      <i
+                        class="bi bi-arrow-right-circle-fill red-color"
+                        style="vertical-align: top"
+                      ></i
+                    ></a>
+                  </p> -->
+                  <!-- <div
+                    class="sortable experiencialaboral"
+                    id="experiencialaboral"
+                    style="display: block"
+                  >
+                    <div class="cuadro ui-state-default">
+                      <div style="position: relative">
+                        <div
+                          class="timeline_bola color_estrellas"
+                          style="background: #04d15d"
+                        ></div>
+                        <p
+                          class="titulo2 color"
+                          contenteditable="false"
+                          placeholder="Position"
+                          style="color: #04d15d"
+                        >
+                          Intern UI/UX Designer
+                        </p>
+                      </div>
+                      <p
+                        class="titulo3"
+                        contenteditable="false"
+                        placeholder="Employer"
+                      >
+                        Cydeva Solution
+                      </p>
+                      <p
+                        class="fecha"
+                        contenteditable="false"
+                        placeholder="From - Until"
+                      >
+                        Dec 10 2023 - March 2 2024
+                      </p>
+                      <p class="texto" contenteditable="false">
+                        - <b>Cydeva</b> is a company specializing in providing
+                        technology solutions, and is a trusted partner in
+                        software development, website design, mobile
+                        applications, microservices, AI, chatbots and
+                        blockchain.
+                      </p>
+                      <br />
+                      <p class="texto" contenteditable="false">
+                        - <b>Responsibilities:</b> Market and competitor
+                        research Competitive research, Conducting user surveys
+                        and interviews, User interface design, User experience
+                        design, Prototyping and testing, Learning and honing
+                        skills UI/UX design in a real environment. Additionally,
+                        because it's a Startup company, I still guarantee a
+                        position in the Front end code (flutter) of the
+                        application.
+                      </p>
+                      <br />
+                      <p class="texto" contenteditable="false">
+                        - <b>Project:</b>
+                        <a href="https://giaoluutennis.com/">
+                          giaoluutennis.com</a
+                        >
+                        <br />
+                      </p>
+                      <div class="timeline_linea"></div>
+                    </div> -->
+                    <p
+                      class="titulo1"
+                      id="titulo_laboral"
+                      contenteditable="false"
+                      placeholder="Professional experience"
+                      style="display: block"
+                    >
+                      <a
+                        href="https://github.com/chip267"
+                        title="Click to show more details and project on Github"
+                        target="_blank"
+                        >Projects &nbsp;
+                        <i
+                          class="bi bi-arrow-right-circle-fill red-color"
+                          style="vertical-align: top"
+                        ></i
+                      ></a>
+                    </p>
+                    <div
+                      class="sortable experiencialaboral"
+                      id="experiencialaboral"
+                      style="display: block"
+                    >
+                      <div class="cuadro ui-state-default">
+                        <div style="position: relative">
+                          <div
+                            class="timeline_bola color_estrellas"
+                            style="background: #04d15d"
+                          ></div>
+                          <p
+                            class="titulo2 color"
+                            contenteditable="false"
+                            placeholder="Position"
+                            style="color: #04d15d"
+                          >
+                            UI/UX Designer & UI Developer | Personal Portfolio
+                          </p>
+                        </div>
+                        <p
+                          class="titulo3"
+                          contenteditable="false"
+                          placeholder="Employer"
+                        >
+                          Chip's Portfolio
+                        </p>
+                        
+                        <p class="texto" contenteditable="false">
+                          - This is <b>my portfolio website</b>, it lists my personal <b>contact information</b> and notable <b>projects</b> I have worked on.
+                        </p>
+                        <br />
+                        <p class="texto" contenteditable="false">
+                          - <b>Technology:</b> HTML/CSS5.
+                        </p> 
+                        <br />
+                        <p class="texto" contenteditable="false">
+                          - <b>Link:</b>
+                          <a
+                            href="https://thanhhien-portfolio.netlify.app/"
+                          >
+                          https://thanhhien-portfolio.netlify.app/</a
+                          >
+                          <br />
+                        </p>
+                        <div class="timeline_linea"></div>
+                      </div>
+
+                      <div class="cuadro ui-state-default">
+                        <div style="position: relative">
+                          <div
+                            class="timeline_bola color_estrellas"
+                            style="background: #04d15d"
+                          ></div>
+                          <p
+                            class="titulo2 color"
+                            contenteditable="false"
+                            placeholder="Position"
+                            style="color: #04d15d"
+                          >
+                            UI Developer | My CV
+                          </p>
+                        </div>
+                        <p
+                          class="titulo3"
+                          contenteditable="false"
+                          placeholder="Employer"
+                        >
+                          MY CV
+                        </p>
+                        <!-- <p
+                          class="fecha"
+                          contenteditable="false"
+                          placeholder="From - Until"
+                        >
+                          Jan 6 2024
+                        </p> -->
+                        <p class="texto" contenteditable="false">
+                          - This is <b>my personal CV</b> , listing the projects I have worked on, my certificates and personal information.
+                        </p>
+                        <br />
+                        <!-- <p class="texto" contenteditable="false">
+                          - <b>Responsibilities:</b> Create graphic elements such
+                          as buttons, icons, and colors to design an attractive
+                          and professional interface. Code many components and map API for this project.
+                        </p> -->
+                        <br />
+                        <p class="texto" contenteditable="false">
+                          - <b>Link:</b>
+                          <a
+                            href="https://thanhhien-uidev.netlify.app/"
+                          >
+                          https://thanhhien-uidev.netlify.app/</a
+                          >
+                          <br />
+                        </p>
+                        <div class="timeline_linea"></div>
+                      </div>
+
+                      <div class="cuadro ui-state-default">
+                        <div style="position: relative">
+                          <div
+                            class="timeline_bola color_estrellas"
+                            style="background: #04d15d"
+                          ></div>
+                          <p
+                            class="titulo2 color"
+                            contenteditable="false"
+                            placeholder="Position"
+                            style="color: #04d15d"
+                          >
+                            UI Developer | Personal Task Management Boards
+                          </p>
+                        </div>
+                        <p
+                          class="titulo3"
+                          contenteditable="false"
+                          placeholder="Employer"
+                        >
+                          AppDistro
+                        </p>
+                        <p
+                          class="fecha"
+                          contenteditable="false"
+                          placeholder="From - Until"
+                        >
+                          May 14 - May 27
+                        </p>
+                        <!-- <p class="texto" contenteditable="false">
+                          - 5 members.
+                        </p> -->
+                        <p class="texto" contenteditable="false">
+                          - This is my personal project, UI Board of a personal task management web application.
+                        </p>
+                        <br />
+                        <p class="texto" contenteditable="false">
+                          - <b>Technology:</b> HTML/CSS5, React.
+                        </p>
+                        <br />
+                        <p class="texto" contenteditable="false">
+                          - <b>Github:</b>
+                          <a
+                            href="https://github.com/chip267/personal_task_manager_ui"
+                          >
+                          https://github.com/chip267/personal_task_manager_ui.</a
+                          >
+                          <br />
+                        </p>
+                        <div class="timeline_linea"></div>
+                      </div>
+                      <div class="cuadro ui-state-default">
+                        <div style="position: relative">
+                          <div
+                            class="timeline_bola color_estrellas"
+                            style="background: #04d15d"
+                          ></div>
+                          <p
+                            class="titulo2 color"
+                            contenteditable="false"
+                            placeholder="Position"
+                            style="color: #04d15d"
+                          >
+                            UI/UX Designer & Front-end Developer | Flower Shop Web
+                          </p>
+                        </div>
+                        <p
+                          class="titulo3"
+                          contenteditable="false"
+                          placeholder="Employer"
+                        >
+                          FlowerFusion
+                        </p>
+                        <p
+                          class="fecha"
+                          contenteditable="false"
+                          placeholder="From - Until"
+                        >
+                          Jan 6 2024
+                        </p>
+                        <p class="texto" contenteditable="false">
+                          - <b>FlowerFusion</b> will bring you a fresh and
+                          unique flower shopping experience. With an intuitive
+                          and user-friendly interface,
+                          <b>FlowerFusion</b> offers the most comfortable and
+                          enjoyable online shopping experience.
+                        </p>
+                        <br />
+                        <p class="texto" contenteditable="false">
+                          - <b>Responsibilities:</b> Create graphic elements such
+                          as buttons, icons, and colors to design an attractive
+                          and professional interface. Code many components and map API for this project.
+                        </p>
+                        <br />
+                        <p class="texto" contenteditable="false">
+                          - <b>Github:</b>
+                          <a
+                            href="https://github.com/XuanThao03/FlowerFusion"
+                          >
+                          https://github.com/XuanThao03/FlowerFusion</a
+                          >
+                          <br />
+                        </p>
+                        <div class="timeline_linea"></div>
+                      </div>
+                      
+                      <!-- <div class="cuadro ui-state-default">
+                        <div style="position: relative">
+                          <div
+                            class="timeline_bola color_estrellas"
+                            style="background: #04d15d"
+                          ></div>
+                          <p
+                            class="titulo2 color"
+                            contenteditable="false"
+                            placeholder="Position"
+                            style="color: #04d15d"
+                          >
+                            Visual Designer | Flower Fusion Web UI
+                          </p>
+                        </div>
+                        <p
+                          class="titulo3"
+                          contenteditable="false"
+                          placeholder="Employer"
+                        >
+                          Flower Fusion
+                        </p>
+                        <p
+                          class="fecha"
+                          contenteditable="false"
+                          placeholder="From - Until"
+                        >
+                          Nov 20 2023
+                        </p>
+                        <p class="texto" contenteditable="false">
+                          - <b>FlowerFusion</b> will bring you a fresh and
+                          unique flower shopping experience. With an intuitive
+                          and user-friendly interface,
+                          <b>FlowerFusion</b> offers the most comfortable and
+                          enjoyable online shopping experience.
+                        </p>
+                        <br />
+                        <p class="texto" contenteditable="false">
+                          - <b>Responsibilities:</b> Conduct market research on
+                          the hotel industry, evaluate booking trends, and
+                          factors influencing user decisions. Create user
+                          experience flowcharts to ensure the booking process is
+                          smooth and user-friendly. Create graphic elements such
+                          as buttons, icons, and colors to design an attractive
+                          and professional interface.
+                        </p>
+                        <br />
+                        <p class="texto" contenteditable="false">
+                          - <b>Behance:</b>
+                          <a
+                            href="https://www.behance.net/gallery/185250199/Flower-Shop-Web-UI"
+                          >
+                            https://www.behance.net/gallery/185250199/Flower-Shop-Web-UI.</a
+                          >
+                          <br />
+                        </p>
+                        <div class="timeline_linea"></div>
+                      </div> -->
+                    </div>
+                  </div>
+                </div>
+                <div id="bloquesecundario">
+                  <div style="clear: both"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="fin_hoja_anim">
+            <div class="fin_hoja" style="display: none"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
